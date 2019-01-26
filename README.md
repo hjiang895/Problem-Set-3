@@ -5,7 +5,7 @@ This problem set will give you the opportunity to pratice your Java syntax while
 
 ---
 ### Reminders
-If your code does not compile, you will get a 0. Don't submit code that doesn't compile! One way to avoid ending up with code a program that you can't get to compile is to re-compile often. Every time you write a few lines that ought to compile, re-compile. 
+If your code does not compile, you will get a 0. Don't submit code that doesn't compile! One way to avoid ending up a program that you can't get to compile is to re-compile often. Every time you write a few lines that ought to compile, re-compile. 
 
 For instance, in this program you'll start by writing a construtor. Write it (about 4 lines), then compile. Keep fixing it until it compiles. Then try it out in the `main()` method by creating a `Team` object. Work on it until it compiles. Then move onto the next task, ensuring each time that it compiles before proceeding to the following task.
 
@@ -14,7 +14,7 @@ You can push your changes to GitHub whenever you like. It is sometimes useful to
 Finally, don't forget to write comments in your code. I will gladly give you partial credit for code that doesn't do exactly what it's supposed to do if you write comments explaining what you did and why.
 
 
-### Part 1: Create a `Team` class
+### Introduction
 In the `src` directory, you will see a file called `Team.java`. **You will be modifying this file so look at it as you read this description.** This is a class that contains information (variables) and behaviors (methods) associated with a team that plays some sport. `Team` has the following instance variables:
 
 ```java
@@ -26,6 +26,7 @@ int losses;
 
 `Team` also has one static variable, `MAX_GAMES`, which is set to 25. I will explain how to use this in the `main()` method, below.
 
+### Your tasks
 Here are your tasks:
 
 1. Write a constructor that will create an instance of `Team` and will initialize the four instance variables. In the `Team.java` file, I have provided some of the code for the constructor, along with some helpful comments. You will fill in the rest.
@@ -53,7 +54,7 @@ Here are your tasks:
   * Using the `wins` and `losses` instance variables, print out the record of wins and losses for each team.
   * Print out which team won the whole series.
   
----
+### Pushing and verifying your submission
 
 Once your code works to your satisfaction, push `Team.java` to your personal master repo on the GitHub Classroom site, as you did for ps1 and ps2. Use the commit message "READY FOR GRADING" so we know you are done. For a reminder about how to do this, see ps1.
 
