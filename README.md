@@ -9,6 +9,8 @@ If your code does not compile, you will get a 0. Don't submit code that doesn't 
 
 For instance, in this program you'll start by writing a construtor. Write it (about 4 lines), then compile. Keep fixing it until it compiles. Then try it out in the `main()` method by creating a `Team` object. Work on it until it compiles. Then move onto the next task, ensuring each time that it compiles before proceeding to the following task.
 
+You can push your changes to GitHub whenever you like. It is sometimes useful to use GitHub as a back-up. If your computer breaks or gets lost, you'll be very happy that you stored your partially completed code on GitHub.
+
 Finally, don't forget to write comments in your code. I will gladly give you partial credit for code that doesn't do exactly what it's supposed to do if you write comments explaining what you did and why.
 
 
@@ -34,9 +36,10 @@ Here are your tasks:
 
     To simulate one team playing another, you will use `Math.random()` to generate a random number. If the random number is less than or equal to 0.5, the team who called the method wins. Otherwise the team who is the argument wins. 
   
-    The method will do the following after deciding the winner: (1) Print out a message stating the winner and the loser (e.g., "The Springfield Humidifiers beat the Worcester Inhalers!"). (2) Using the setters, increment the winning team's `wins` variable by 1 and increment the losing team's `losses` variable by 1. (3) Return true if the calling `Team` won and return false if the argument `Team` won.
+    The method will do the following after deciding the winner: (1) Using the setters, increment the winning team's `wins` variable by 1 and increment the losing team's `losses` variable by 1. (2) Return true if the calling `Team` won and return false if the argument `Team` won.
 
 4. Write a `main()` method that tests your code as follows. Again, some of the code you need is in the `Team.java` file:
+
   * Read in the first command-line argument as an integer representing how many game should be played.
   * Make sure that it is less than the static variable `MAX_GAMES`. If it is more than `MAX_GAMES`, you will end the program by throwing this exception:
   ```java
@@ -45,8 +48,27 @@ Here are your tasks:
   * Create an empty ArrayList of String objects. This will store the winner of each game in a series.
   * Create a Team object with whatever city and mascot you wish.
   * Create a second Team object with whatever city and mascot you wish.
-  * Play that many games between the two teams. (Hint: use a for loop!) After each game, add the name of the winner (i.e., the city + mascot) to the Array List.
-  * After the desired number of games, announce how many games each team won.
+  * Play that many games between the two teams. (Hint: use `play()` and a for loop!) After each game, add the name of the winner (i.e., the city + mascot) to the Array List.
+  * After the desired number of games, use the ArrayList to print out the name of the winning team for each game.
+  * Using the `wins` and `losses` instance variables, print out the record of wins and losses for each team.
+  * Print out which team won the whole series.
+  
+---
+
+Once your code works to your satisfaction, push `Team.java` to your personal master repo on the GitHub Classroom site, as you did for ps1 and ps2. Use the commit message "READY FOR GRADING" so we know you are done. For a reminder about how to do this, see ps1.
+
+As always, you can check to see if it worked by going to your account on GitHub and checking to see if it was updated and whether the files have changed in the way you expected. This is your responsibility.
+
+---
+
+## Important notes on grading
+
+1. The only acceptable way to submit is through GitHub. If you do not submit via GitHub, you will get a 0.
+
+2. The `Team.java` file **must be in the `src` directory**. You will lose 2 points if it is in the wrong directory.
+
+3. Your code must compile. If your program does not compile, you will get a 0 for this problem set. If you are struggling and you aren't able to get in touch with me or the TAs, any TAs in the lab can help you compile your code.
+
   
 
 
